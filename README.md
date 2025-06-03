@@ -1,57 +1,36 @@
-SEM12_PRJ_CRUD_EduardoBullon
-Este es un proyecto de Spring Boot que implementa una aplicación web con operaciones CRUD para la gestión de la entidad Alumno. El proyecto utiliza tecnologías como JPA para la persistencia de datos, AOP para auditoría y registro de eventos, y Docker para la contenedorización y despliegue.
+# SEM12_PRJ_CRUD_EduardoBullon
 
-Tecnologías Utilizadas
-Spring Boot: Framework para desarrollar aplicaciones Java de forma rápida y sencilla.
+Este es un proyecto de **Spring Boot** que implementa una aplicación web con operaciones CRUD para la gestión de la entidad **Alumno**. El proyecto utiliza tecnologías como **JPA** para la persistencia de datos, **AOP** para auditoría y registro de eventos, y **Docker** para la contenedorización y despliegue.
 
-JPA (Java Persistence API): Para la persistencia de datos en la base de datos.
+## Tecnologías Utilizadas
 
-AOP (Aspect-Oriented Programming): Para la implementación de funcionalidades transversales como auditoría y logging.
+- **Spring Boot**: Framework para desarrollar aplicaciones Java de forma rápida y sencilla.
+- **JPA (Java Persistence API)**: Para la persistencia de datos en la base de datos.
+- **AOP (Aspect-Oriented Programming)**: Para la implementación de funcionalidades transversales como auditoría y logging.
+- **Docker**: Para contenedorización de la aplicación y facilitar su despliegue en entornos diferentes.
+- **H2 Database**: Base de datos en memoria utilizada para pruebas y desarrollo.
+- **Render**: Plataforma utilizada para el despliegue de la aplicación en la nube.
 
-Docker: Para contenedorización de la aplicación y facilitar su despliegue en entornos diferentes.
+## Descripción
 
-H2 Database: Base de datos en memoria utilizada para pruebas y desarrollo.
+Este proyecto implementa un sistema de gestión de **Alumnos** con operaciones básicas de creación, lectura, actualización y eliminación (CRUD). Además, se incluye la funcionalidad de auditoría utilizando **AOP** y el uso de **JPA** para la interacción con la base de datos. El proyecto está empaquetado y listo para ejecutarse dentro de un contenedor **Docker**, lo que facilita su despliegue y escalabilidad en cualquier entorno compatible.
 
-Render: Plataforma utilizada para el despliegue de la aplicación en la nube.
+## Funcionalidades
 
-Descripción
-Este proyecto implementa un sistema de gestión de Alumnos con operaciones básicas de creación, lectura, actualización y eliminación (CRUD). Además, se incluye la funcionalidad de auditoría utilizando AOP y el uso de JPA para la interacción con la base de datos. El proyecto está empaquetado y listo para ejecutarse dentro de un contenedor Docker, lo que facilita su despliegue y escalabilidad en cualquier entorno compatible.
+- **Gestión de Alumnos**: Crear, leer, actualizar y eliminar registros de alumnos en la base de datos.
+- **Auditoría con AOP**: Registra automáticamente todas las acciones realizadas en la base de datos.
+- **Base de datos en memoria con H2**: Permite visualizar y gestionar datos fácilmente desde la consola.
+- **Dockerizado**: Conteneriza la aplicación para facilitar su despliegue.
 
-Funcionalidades
-Gestión de Alumnos: Crear, leer, actualizar y eliminar registros de alumnos en la base de datos.
+## Requisitos
 
-Auditoría con AOP: Registra automáticamente todas las acciones realizadas en la base de datos.
+- **JDK 17** o superior.
+- **Maven**: Para la gestión de dependencias y construcción del proyecto.
+- **Docker** (opcional): Si deseas ejecutar la aplicación en un contenedor.
 
-Base de datos en memoria con H2: Permite visualizar y gestionar datos fácilmente desde la consola.
+## Instalación
 
-Dockerizado: Conteneriza la aplicación para facilitar su despliegue.
+### Clonar el repositorio:
 
-Requisitos
-JDK 17 o superior.
-
-Maven: Para la gestión de dependencias y construcción del proyecto.
-
-Docker (opcional): Si deseas ejecutar la aplicación en un contenedor.
-
-Instalación
-Clonar el repositorio:
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/EduardoBullon/SEM12_PRJ_CRUD_EduardoBullon.git
-Construir el proyecto:
-Para construir el proyecto, puedes usar Maven:
-
-bash
-Copiar
-Editar
-cd SEM12_PRJ_CRUD_EduardoBullon
-mvn clean package
-Ejecutar la aplicación:
-Para ejecutar la aplicación de manera local, usa el siguiente comando:
-
-bash
-Copiar
-Editar
-java -jar target/demo-0.0.1-SNAPSHOT.jar
-La aplicación estará disponible en http://localhost:8086.
