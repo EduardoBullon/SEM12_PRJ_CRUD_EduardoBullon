@@ -1,6 +1,6 @@
 FROM maven:3.9.4-eclipse-temurin-17 AS build
 WORKDIR /app
-COPY pom.xml .
+COPY PRJ_CRUD_SPRING_BOOT/pom.xml .
 COPY PRJ_CRUD_SPRING_BOOT/src ./src
 ENV MAVEN_OPTS="-Dfile.encoding=UTF-8"
 RUN mvn clean package -DskipTests
